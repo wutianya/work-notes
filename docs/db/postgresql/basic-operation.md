@@ -9,6 +9,12 @@ ALTER ROLE ywuser PASSWORD 'password'; -- change password
 ALTER ROLE "yhuser" CREATEDB NOCREATEROLE LOGIN; -- 允许role创建DB
 ```
 
+## 查询所有role
+
+```sql
+SELECT * FROM pg_roles;
+```
+
 ## 查看当前连接数
 
 ```sql
